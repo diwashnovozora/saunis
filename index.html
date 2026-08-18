@@ -415,6 +415,71 @@ img { image-rendering: -webkit-optimize-contrast; }
   p + p{ margin-top: 14px !important; }
 }
 
+
+/* === FIX: COVER CROP FROM BOTTOM ONLY + SCROLL VISIBILITY === */
+@media (max-width: 768px){
+  /* Crop cover from button side (bottom) only - keep top intact */
+  #heroBook{
+    aspect-ratio: 410 / 540 !important; /* shorter than original 410/612 - crops bottom */
+    max-height: 56vh !important;
+    min-height: 360px !important;
+    height: auto !important;
+    overflow: hidden !important;
+    position: relative !important;
+  }
+  #heroBook img{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 112% !important; /* slightly taller so bottom gets cropped */
+    object-fit: cover !important;
+    object-position: center top !important;
+    transform: none !important;
+  }
+  #heroBook .tilt-glare{ display: none !important; }
+
+  /* Ensure scroll book version is ALWAYS visible */
+  #scrollBookView{
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 100vh !important;
+    padding-top: 64px !important;
+  }
+  #scrollBookView.hidden{ display: none !important; }
+  #scrollBookView:not(.hidden){
+    display: block !important;
+  }
+  #scrollContentBook{
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 200px !important;
+    content-visibility: visible !important;
+    contain-intrinsic-size: auto !important;
+  }
+  #scrollContentBook > div{
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    content-visibility: visible !important;
+    animation: none !important;
+    transform: none !important;
+  }
+  #bookPage{
+    display: block !important;
+  }
+  #bookPage.hidden{
+    display: none !important;
+  }
+  #bookPage:not(.hidden){
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+
 </style>
 </head>
 <body class="overflow-x-hidden">
