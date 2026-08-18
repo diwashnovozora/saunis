@@ -531,6 +531,86 @@ img{ content-visibility: visible !important; }
   #heroBook .desktop-cover{ display: none !important; }
 }
 
+
+/* === FULL VIEW MOBILE COVER + STRAIGHT AUTHOR TEXT === */
+@media (max-width: 768px){
+  /* Cover full view on mobile - override all previous small thumbnail */
+  #heroWrap{
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 0 24px 0 !important;
+    margin: 0 !important;
+    order: 2 !important;
+  }
+  #heroBook{
+    width: 92vw !important;
+    max-width: 92vw !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    position: relative !important;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 0 1px rgba(201,169,110,0.12) !important;
+  }
+  #heroBook .mobile-cover, #heroBook .desktop-cover{
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    display: block !important;
+  }
+  #heroBook .desktop-cover{ display: none !important; }
+  #heroBook .mobile-cover{ display: block !important; }
+
+  /* Make the side text EXACT ORIGINAL etc go below cover, centered */
+  #landingPage > section > div{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  #landingPage > section > div > div:first-child{
+    order: 1 !important;
+  }
+  /* Ensure hero image container doesn't have side text inline */
+  #heroWrap + div, #landingPage .text-\[10px\]{
+    text-align: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: 16px !important;
+  }
+
+  /* Nisuta Acharya — For Saugat Forever STRAIGHT */
+  .font-caveat{
+    transform: none !important;
+    rotate: 0deg !important;
+    --tw-rotate: 0deg !important;
+    font-style: normal !important;
+    text-align: left !important;
+    white-space: normal !important;
+    line-height: 1.3 !important;
+    display: block !important;
+    width: 100% !important;
+  }
+  /* The specific line */
+  div:has(> .font-caveat) { 
+    width: 100% !important;
+  }
+}
+
+/* Desktop keeps old exact */
+@media (min-width: 769px){
+  .font-caveat{ transform: none !important; rotate: 0deg !important; }
+}
+
 </style>
 </head>
 <body class="overflow-x-hidden">
@@ -601,7 +681,7 @@ img{ content-visibility: visible !important; }
 <p>Thank you for reading our story, exactly as it happened.</p>
 <div class="pt-4 flex items-center gap-4">
 <div class="w-12 h-px bg-[#C9A96E]/30"></div>
-<div class="font-caveat text-[18px] text-[#C9A96E] rotate-[-1deg]">Nisuta Acharya — For Saugat ♥ Forever</div>
+<div class="font-caveat text-[18px] text-[#C9A96E]" style="transform:none !important; rotate:0deg !important; display:inline-block; white-space:nowrap;">Nisuta Acharya — For Saugat ♥ Forever</div>
 </div>
 </div>
 <div class="mt-10 pt-8 border-t border-white/[0.05] flex flex-wrap items-center justify-center gap-6 font-inter text-[10px] tracking-[0.14em] uppercase text-white/25">
