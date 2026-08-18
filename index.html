@@ -172,99 +172,247 @@ button:active, .back-btn:active{
 }
 
 
-/* === PERFECT MOBILE FIT - ADDED WITHOUT TOUCHING CONTENT === */
+
+/* === ULTRA PERFECT MOBILE FIT - NO CUT, PERFECT BREATHING, INSTANT LOAD === */
+* { -webkit-tap-highlight-color: transparent; }
+img { image-rendering: -webkit-optimize-contrast; }
+
 @media (max-width: 768px){
-  /* Header */
-  #globalHeader .max-w-\[1440px\]{padding-left:14px !important; padding-right:14px !important; gap:8px;}
-  #globalHeader{height:auto !important; min-height:56px;}
-  #globalHeader .h-\[64px\]{height:56px !important;}
-  #goHome{font-size:11px !important; letter-spacing:0.32em !important; flex-shrink:0;}
-  #goToBookTop{padding:8px 14px !important; font-size:10px !important; white-space:nowrap;}
-  #headerScrollFlip{scale:0.92; transform-origin:right center;}
-  
-  /* Landing hero */
-  #landingPage section{min-height:auto !important; padding-top:72px !important; padding-bottom:32px !important;}
-  #landingPage .max-w-\[1440px\]{padding-left:16px !important; padding-right:16px !important; gap:28px !important; grid-template-columns:1fr !important;}
-  #kicker{flex-wrap:wrap !important; gap:8px !important; margin-bottom:20px !important;}
-  #kicker div:last-child{font-size:9px !important; line-height:1.4 !important; white-space:normal !important;}
-  h1.font-brand{font-size:10.5vw !important; line-height:0.92 !important; letter-spacing:-0.01em !important;}
-  #landingPage .pl-7{padding-left:16px !important;}
-  #desc{font-size:17px !important; line-height:1.65 !important;}
-  #ctaWrap{width:100%;}
-  #mainReadBtn{width:100%; min-width:0 !important; justify-content:center; padding:15px 20px !important;}
-  #metaLine{font-size:9.5px !important; flex-wrap:wrap !important;}
-  #heroWrap{order:-1; width:100%; justify-content:center; margin-bottom:8px;}
-  #heroBook{max-width:300px !important; width:88vw !important; height:440px !important; margin:0 auto;}
-  
-  /* Author sections */
-  #authorStatement{padding:48px 0 !important;}
-  #authorStatement .max-w-\[860px\]{padding-left:16px !important; padding-right:16px !important;}
-  #authorStatement h2{font-size:24px !important; line-height:1.15 !important;}
-  #authorStatement .p-8{padding:20px !important;}
-  #authorLanding{padding:40px 0 !important;}
-  #authorLanding .max-w-\[1100px\]{padding-left:16px !important; padding-right:16px !important;}
-  #authorLanding .grid{grid-template-columns:1fr !important;}
-  #authorLanding .p-8{padding:20px !important;}
-  #authorLanding .lg\:p-10{padding:20px !important;}
-  #authorLanding .lg\:p-12{padding:20px !important;}
-  #authorLanding img.w-\[140px\]{width:112px !important; height:112px !important;}
-  #authorLanding h3{font-size:22px !important;}
-  
-  /* Chapters list */
-  #chaptersLanding{padding:40px 0 !important;}
-  #chaptersLanding .max-w-\[1100px\]{padding-left:16px !important; padding-right:16px !important;}
-  #chaptersListLanding{grid-template-columns:1fr !important;}
-  
-  /* Book scroll view */
-  #scrollBookView{padding-top:72px !important;}
-  #scrollBookView .max-w-\[760px\]{padding-left:16px !important; padding-right:16px !important;}
-  #scrollBookView .text-center.py-14{padding-top:28px !important; padding-bottom:28px !important; margin-bottom:28px !important;}
-  #scrollBookView .font-playfair.text-\[28px\]{font-size:22px !important;}
-  #scrollContentBook .space-y-20 > *{margin-bottom:40px !important;}
-  #scrollContentBook h2{font-size:22px !important;}
-  #scrollContentBook .font-cormorant{font-size:17px !important; line-height:1.8 !important;}
-  
-  /* Flip view */
-  #flipBookView .px-4{padding-left:12px !important; padding-right:12px !important;}
-  #flipBookView .lg\:px-8{padding-left:12px !important; padding-right:12px !important;}
-  #flipBookView .h-\[64px\]{height:52px !important;}
-  #pageCurrentBook{padding:20px 16px !important;}
-  #pageCurrentBook h2{font-size:22px !important; margin-bottom:16px !important;}
-  #pageCurrentBook .font-cormorant{font-size:17px !important; line-height:1.8 !important;}
-  #bookContainerBook #zonePrevBook, #bookContainerBook #zoneNextBook{width:18% !important;}
-  #flipBookView .h-\[72px\]{height:60px !important; padding-left:12px !important; padding-right:12px !important;}
-  #prevBtnBook, #nextBtnBook{width:40px !important; height:40px !important;}
-  
-  /* Buttons touch targets */
-  .back-btn, #instaConnectBtn, #startReadingBtn, #viewChaptersBtn, #backToTopEnd{min-height:42px; display:inline-flex; align-items:center; justify-content:center;}
-  
-  /* Prevent horizontal overflow */
-  body, html{overflow-x:hidden !important; max-width:100vw;}
-  *{max-width:100%; box-sizing:border-box;}
-  img{max-width:100% !important; height:auto;}
-}
+  /* Prevent any horizontal cut */
+  html, body { overflow-x: hidden !important; width: 100% !important; max-width: 100vw !important; }
+  body { position: relative; }
 
-@media (max-width: 480px){
-  h1.font-brand{font-size:11.5vw !important;}
-  #heroBook{max-width:272px !important; width:86vw !important; height:400px !important;}
-  #authorStatement h2{font-size:21px !important;}
-  #scrollContentBook .font-cormorant, #pageCurrentBook .font-cormorant{font-size:16px !important;}
-  #globalHeader .max-w-\[1440px\]{flex-wrap:nowrap;}
-  #goToBookTop span.relative{font-size:9.5px !important;}
-}
-
-@media (max-width: 360px){
-  h1.font-brand{font-size:12.5vw !important;}
-  #heroBook{max-width:248px !important; height:368px !important;}
-  .font-inter.text-\[10px\]{font-size:9px !important;}
-}
-
-/* Safe area for notched phones */
-@supports (padding: max(0px)){
-  #globalHeader, #flipBookView .h-\[64px\], #flipBookView .h-\[72px\]{
-    padding-left: max(12px, env(safe-area-inset-left));
-    padding-right: max(12px, env(safe-area-inset-right));
+  /* Header - no button cut */
+  #globalHeader{
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
   }
+  #globalHeader > div{
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    height: 56px !important;
+    gap: 10px !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+  }
+  #globalHeader > div > div:first-child{ flex-shrink: 0; min-width: 0; }
+  #globalHeader > div > div:last-child{
+    flex-shrink: 1;
+    min-width: 0;
+    gap: 8px !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-end !important;
+  }
+  #goHome{ font-size: 11px !important; letter-spacing: 0.34em !important; padding: 6px 0 !important; }
+  #goToBookTop{
+    padding: 9px 14px !important;
+    font-size: 9.5px !important;
+    letter-spacing: 0.11em !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    min-width: fit-content !important;
+    max-width: none !important;
+  }
+  #headerScrollFlip{
+    transform: scale(0.88);
+    transform-origin: right center;
+    margin-right: -4px;
+    flex-shrink: 0;
+  }
+
+  /* Landing hero - perfect breathing */
+  #landingPage{ padding-bottom: 0 !important; }
+  #landingPage > section{
+    min-height: auto !important;
+    padding-top: 64px !important;
+    padding-bottom: 28px !important;
+    align-items: flex-start !important;
+  }
+  #landingPage > section > div{
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    gap: 32px !important;
+    grid-template-columns: 1fr !important;
+  }
+  #kicker{ margin-bottom: 16px !important; gap: 10px !important; }
+  #kicker div:last-child{ font-size: 8.5px !important; line-height: 1.5 !important; letter-spacing: 0.18em !important; }
+  h1.font-brand{ font-size: 10vw !important; line-height: 0.92 !important; margin-bottom: 4px !important; }
+  #t1, #t2{ display: block !important; line-height: 0.92 !important; }
+  #landingPage .pl-7{ padding-left: 0 !important; margin-top: 20px !important; border-left: none !important; }
+  #goldLine{ display: none !important; }
+  #desc{ font-size: 16.5px !important; line-height: 1.7 !important; margin-top: 0 !important; }
+  #desc + div{ margin-top: 22px !important; gap: 14px !important; flex-direction: column !important; align-items: stretch !important; }
+  #ctaWrap{ width: 100% !important; transform: none !important; opacity: 1 !important; }
+  #mainReadBtn{ width: 100% !important; min-width: 0 !important; padding: 16px 20px !important; font-size: 11px !important; justify-content: center !important; }
+  #metaLine{ font-size: 9px !important; gap: 8px !important; justify-content: flex-start !important; transform: none !important; opacity: 1 !important; }
+
+  /* COVER IMAGE - NEVER CUT */
+  #heroWrap{
+    order: -1 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 0 12px 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
+  #heroBook{
+    width: 78vw !important;
+    max-width: 320px !important;
+    height: auto !important;
+    aspect-ratio: 410 / 612 !important;
+    max-height: 62vh !important;
+    min-height: 380px !important;
+    margin: 0 auto !important;
+    border-radius: 6px !important;
+    overflow: hidden !important;
+    animation: none !important;
+    transform: none !important;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.55), 0 0 0 1px rgba(201,169,110,0.12) !important;
+  }
+  #heroBook img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    display: block !important;
+  }
+  #heroWrap > div:last-child{ margin-top: 12px !important; font-size: 9px !important; text-align: center !important; }
+
+  /* Author sections breathing */
+  #authorStatement{ padding: 40px 0 !important; }
+  #authorStatement > div{ padding-left: 18px !important; padding-right: 18px !important; }
+  #authorStatement h2{ font-size: 23px !important; line-height: 1.18 !important; margin-bottom: 0 !important; }
+  #authorStatement .bg-\[\#160A12\]\/60{ padding: 20px 18px !important; border-radius: 14px !important; }
+  
+  #authorLanding{ padding: 36px 0 !important; }
+  #authorLanding > div{ padding-left: 18px !important; padding-right: 18px !important; }
+  #authorLanding .tilt-card{ border-radius: 14px !important; }
+  #authorLanding .grid{ grid-template-columns: 1fr !important; gap: 0 !important; }
+  #authorLanding .bg-\[\#1A0A16\]{ padding: 24px 18px !important; align-items: center !important; text-align: center !important; border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.06) !important; }
+  #authorLanding .p-8, #authorLanding .lg\:p-12{ padding: 22px 18px !important; }
+  #authorLanding h3{ font-size: 21px !important; line-height: 1.2 !important; }
+  #authorLanding .mt-8{ margin-top: 20px !important; }
+  #authorLanding .mt-8.flex{ gap: 10px !important; row-gap: 10px !important; flex-wrap: wrap !important; }
+  #authorLanding #startReadingBtn, #authorLanding #viewChaptersBtn, #authorLanding #instaConnectBtn{
+    flex: 1 1 auto !important;
+    min-width: calc(50% - 5px) !important;
+    justify-content: center !important;
+    padding: 13px 16px !important;
+    font-size: 10px !important;
+    white-space: nowrap !important;
+  }
+  #authorLanding #instaConnectBtn{ flex: 1 1 100% !important; min-width: 100% !important; }
+
+  /* Chapters list breathing */
+  #chaptersLanding{ padding: 36px 0 !important; }
+  #chaptersLanding > div{ padding-left: 18px !important; padding-right: 18px !important; }
+  #chaptersListLanding{ grid-template-columns: 1fr !important; border-radius: 12px !important; gap: 1px !important; }
+  #chaptersListLanding button{ padding: 18px 16px !important; }
+
+  /* Scroll book view - no button cut + breathing */
+  #scrollBookView{ padding-top: 64px !important; }
+  #scrollBookView > div{ padding-left: 18px !important; padding-right: 18px !important; }
+  #scrollBookView > div > div:first-child{
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+  }
+  #backToLandingFromScroll, #backToLandingFromEnd{
+    padding: 10px 16px !important;
+    font-size: 10px !important;
+    white-space: nowrap !important;
+  }
+  #scrollBookView .text-center.py-14{ padding: 24px 0 !important; margin-bottom: 28px !important; }
+  #scrollBookView .font-playfair.text-\[28px\]{ font-size: 22px !important; line-height: 1.15 !important; }
+  #scrollContentBook{ gap: 0 !important; }
+  #scrollContentBook > div{ margin-bottom: 44px !important; padding-bottom: 4px !important; }
+  #scrollContentBook h2{ font-size: 21px !important; margin-bottom: 14px !important; }
+  #scrollContentBook .font-cormorant{ font-size: 16.5px !important; line-height: 1.85 !important; }
+  #bookEnd{ margin-top: 40px !important; padding-top: 28px !important; }
+
+  /* Flip view - no button cut + perfect fit */
+  #flipBookView{ width: 100vw !important; max-width: 100vw !important; }
+  #flipBookView > div:first-child{
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    height: 56px !important;
+    gap: 8px !important;
+    flex-wrap: nowrap !important;
+  }
+  #flipBookView > div:first-child > div:first-child{ gap: 8px !important; flex-shrink: 1; min-width: 0; }
+  #backToLandingFromFlip{ padding: 7px 12px !important; font-size: 9.5px !important; flex-shrink: 0 !important; }
+  #closeFlipFull{ width: 36px !important; height: 36px !important; flex-shrink: 0 !important; }
+  #flipBookView > div:first-child > div:last-child{ gap: 8px !important; flex-shrink: 0; }
+  #btnBackToScrollFromFlip{ display: none !important; }
+  #flipFullPageInfo{ font-size: 9px !important; white-space: nowrap !important; }
+
+  #flipStageBook{ width: 100% !important; height: calc(100vh - 112px) !important; }
+  #bookContainerBook{ width: 100% !important; height: 100% !important; }
+  #pageCurrentBook{
+    padding: 22px 18px !important;
+    padding-bottom: 28px !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  #pageCurrentBook > div{ max-width: 100% !important; }
+  #pageCurrentBook h2{ font-size: 20px !important; margin-bottom: 14px !important; line-height: 1.2 !important; }
+  #pageCurrentBook .font-cormorant{ font-size: 16px !important; line-height: 1.82 !important; }
+  #zonePrevBook, #zoneNextBook{ width: 22% !important; }
+  #zonePrevBook div, #zoneNextBook div{ width: 36px !important; height: 36px !important; opacity: 0.9 !important; }
+
+  #flipBookView > div:last-child{
+    height: 56px !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    gap: 10px !important;
+  }
+  #prevBtnBook, #nextBtnBook{ width: 40px !important; height: 40px !important; flex-shrink: 0 !important; }
+  #pageDotsBook{ gap: 6px !important; flex-wrap: wrap !important; justify-content: center !important; max-width: 42vw !important; }
+  #pageDotsBook div{ width: 6px !important; height: 6px !important; }
+
+  /* Instant load - remove heavy animations on mobile */
+  .tilt-card, #heroBook, .chapter-card{ animation: none !important; transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s, opacity 0.4s !important; }
+  #heroWrap{ animation: none !important; }
+}
+
+/* Extra small - 480px */
+@media (max-width: 480px){
+  #landingPage > section > div{ padding-left: 16px !important; padding-right: 16px !important; }
+  h1.font-brand{ font-size: 11vw !important; }
+  #heroBook{ width: 82vw !important; max-width: 300px !important; min-height: 360px !important; max-height: 58vh !important; }
+  #authorLanding .mt-8.flex{ gap: 8px !important; }
+  #authorLanding #startReadingBtn, #authorLanding #viewChaptersBtn{ min-width: calc(50% - 4px) !important; font-size: 9.5px !important; padding: 12px 12px !important; }
+  #scrollBookView > div, #authorStatement > div, #authorLanding > div, #chaptersLanding > div{ padding-left: 16px !important; padding-right: 16px !important; }
+  #pageCurrentBook{ padding: 18px 16px 24px !important; }
+}
+
+/* 360px - tiny phones */
+@media (max-width: 360px){
+  #globalHeader > div{ padding-left: 10px !important; padding-right: 10px !important; }
+  #goHome{ font-size: 10px !important; }
+  #goToBookTop{ padding: 8px 10px !important; font-size: 9px !important; }
+  #heroBook{ width: 86vw !important; max-width: 272px !important; min-height: 340px !important; }
+  h1.font-brand{ font-size: 12vw !important; }
+}
+
+/* Instant display - content-visibility for fast paint */
+#landingPage, #authorStatement, #authorLanding, #chaptersLanding{
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+#scrollContentBook > div{
+  content-visibility: auto;
+  contain-intrinsic-size: auto 300px;
+}
+
+/* Breathing spaces - perfect rhythm */
+@media (max-width: 768px){
+  section + section{ margin-top: 0 !important; }
+  p + p{ margin-top: 14px !important; }
 }
 
 </style>
